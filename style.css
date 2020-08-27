@@ -35,15 +35,14 @@ body {
 .box {
     display: inline-flex;
     height: 60px;
-    margin-right:180px;
-    margin-left:-50px;
+    margin-right: 180px;
+    margin-left: -50px;
 }
 
 #container {
     border: 2px solid black;
     margin-top: 50px;
     padding: 30px;
-    
 }
 
 label {
@@ -70,6 +69,26 @@ label {
     border: 2px solid black;
 }
 
-form{
+form {
     margin-left: 25%;
+}
+
+#masse {
+    font-size: 40px;
+    width: 300px;
+    text-align: center;
+}
+.bo
+{
+    display: inline-flex;
+    height: 60px;
+    margin-right: 150px;
+    margin-left: -50px;
+}
+.kg
+{
+    display: inline-flex;
+    margin-left: -150px;
+    margin-right: 80px;
+    font-size: 40px;
 }
