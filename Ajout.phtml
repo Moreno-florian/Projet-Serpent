@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./library/style.css">
     <meta name="author" content="Florian Moreno">
     <title>Ajout Repas/Poids</title>
 </head>
@@ -15,6 +15,14 @@
         <h1><img src="./img/serpentlogo2.png" alt="Snake logo"> Ajouter <img src="./img/serpentlogo.png" alt="Snake logo"></h1>
     </header>
 
+    <div class="box3">
+        <select name="type" class="font">
+            <option value="all">Tous</option>
+            <option value="Snatch">Snatch</option>
+            <option value="Nazca" selected>Nazca</option>
+            <option value="Snow">Snow</option>
+        </select>
+    </div>
 
     <div class="type">Ajouter un repas :</div>
 
@@ -53,7 +61,7 @@
                 <label for="masse"> Poids : </label>
                 <input type="text" name="masse" id="masse">
             </div>
-            <div class="kg">Kg</div>
+            <div class="Gr">Gr</div>
             <input type="submit" id="size2" value="Ok">
 
     </div>
