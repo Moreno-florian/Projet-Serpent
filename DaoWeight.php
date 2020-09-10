@@ -3,12 +3,12 @@
 class DaoWeight
 {
 
-    public function addWeight(): void
+    public function addWeight($test): void
     {
         $pdo = Dao::getConnection();     // Connection to the DB
-        $request = $pdo->prepare("INSERT INTO poids (Id_poids,Masse,Id_serpent) VALUES (?,?,?)");  // Prepare the request to be execute
+        $request = $pdo->prepare("INSERT INTO poids (Id_poids,Masse,Date,Id_serpent) VALUES (?,?,?,?)");  // Prepare the request to be execute
         try {
-            $request->execute(array(1, 100, 3));    // Execute the request
+            $request->execute(array(null, $test->get_Weight(), $test->get_Date(), 3));    // Execute the request
         } catch (Exception $e) {
             echo ('Erreur : ' . $e->getMessage() . ' ! ');    // Send the error message.
         }
