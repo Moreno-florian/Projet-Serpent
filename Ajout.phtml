@@ -16,30 +16,31 @@
     </header>
 
     <div class="box3">
-        <select name="type" class="font">
+        <label for="firstname"></label>
+        <select name="firstname" class="font">
             <option value="all">Tous</option>
-            <option value="Snatch">Snatch</option>
-            <option value="Nazca" selected>Nazca</option>
-            <option value="Snow">Snow</option>
+            <option value="1">Snatch</option>
+            <option value="3" selected>Nazca</option>
+            <option value="2">Snow</option>
         </select>
     </div>
 
     <div class="type">Ajouter un repas :</div>
 
     <div id="container">
-        <form action="" method="post">
-            <!-- TO DO Mettre dans action le chemin de la page "??? a voir" -->
+        <form action="../Controller/ControllerDate.php" method="post">
 
             <div class="box">
                 <label for="date"> Date : </label>
                 <input type="date" name="date" id="date">
             </div>
+            
             <div class="box">
-                <label for="type"> Type : </label>
-                <select name="type" class="font">
-                    <option value="adult">Rat adulte</option>
-                    <option value="middle" selected>Rat moyen</option>
-                    <option value="mouse">Souris</option>
+                <label for="proie"> Type : </label>
+                <select name="proie" class="font">
+                    <option value="Rat adulte">Rat adulte</option>
+                    <option value="Rat moyen" selected>Rat moyen</option>
+                    <option value="Souris">Souris</option>
                 </select>
             </div>
             <div class="box">

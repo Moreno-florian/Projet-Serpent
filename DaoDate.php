@@ -3,12 +3,12 @@
 class DaoDate
 {
 
-    public function addDate(): void
+    public function addDate($Date): void
     {
         $pdo = Dao::getConnection();     // Connection to the DB
-        $request = $pdo->prepare("INSERT INTO daterepas (Id_dateRepas,DateRepas,Id_serpent) VALUES (?,?,?)");  // Prepare the request to be execute
+        $request = $pdo->prepare("INSERT INTO daterepas (Id_dateRepas,DateRepas,Type,Id_serpent) VALUES (?,?,?,?)");  // Prepare the request to be execute
         try {
-            $request->execute(array(1, '2020/01/01', 3));    // Execute the request
+            $request->execute(array($Date->get_Id_dateRepas(), $Date->get_DateRepas(), $Date->get_Type(), $Date->get_Id_serpent()));    // Execute the request
         } catch (Exception $e) {
             echo ('Erreur : ' . $e->getMessage() . ' ! ');    // Send the error message.
         }
