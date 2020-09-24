@@ -1,5 +1,6 @@
 <?php
 require_once '../Controller/ControllerDate.php';
+//require_once '../Controller/ControllerTest.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -18,16 +19,23 @@ require_once '../Controller/ControllerDate.php';
     </header>
 
 
-
     <div class="box3">
-        <label for="firstname"></label>
-        <select name="firstname" class="font">
-            <option value="0">Tous</option>
-            <option value="1" selected>Snatch</option>
-            <option value="3">Nazca</option>
-            <option value="2">Snow</option>
-        </select>
+        <form action="../Controller/ControllerTest.php" method="post">
+            <label for="firstname"></label>
+            <select name="firstname" class="font">
+                <option value="0" <?php if (isset($_POST['firstname']) and $_POST['firstname'] == 0) ?>>Tous</option>
+                <option value="1" <?php if (isset($_POST['firstname']) and $_POST['firstname'] == 1) ?>>Snatch</option>
+                <option value="3" selected <?php if (isset($_POST['firstname']) and $_POST['firstname'] == 3)  ?>>Nazca</option>
+                <option value="2" <?php if (isset($_POST['firstname']) and $_POST['firstname'] == 2)  ?>>Snow</option>
+            </select>
+
+            <div class="box4">
+                <input type="submit" id="size3" value="Choisir">
+
+            </div>
+        </form>
     </div>
+
 
     <div class="type3"> Derniers repas :</div>
     <table class="array">
@@ -44,7 +52,7 @@ require_once '../Controller/ControllerDate.php';
             <tr class="SizeFont">
                 <td> <?= $consult['trueDate']; ?> </td>
                 <td> <?= $consult['Type']; ?></td>
-                <td> <?= $consult['Id_serpent']; ?> </td>
+                <td> <?= $consult['Nom'] ?></td>
                 <td class="hidden"> <?= $consult['Id_dateRepas']; ?> </td>
                 <td class="tButton">
                     <form action="../Controller/ControllerDelete.php" method="post">
