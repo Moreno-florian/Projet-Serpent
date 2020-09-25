@@ -4,14 +4,14 @@ class Weight
     private $_Id_weight;
     private $_Weight;
     private $_Date;
-    private $_Id_snake;
+    private $_Id_serpent;
 
-    public function __construct($Id_weight, $Weight, $Date, $Id_snake)
+    public function __construct($Id_weight, $Weight, $Date, $Id_serpent)
     {
-        $this->_Id_snake = $Id_snake;
+        $this->_Id_weight = $Id_weight;
         $this->_Weight = $Weight;
         $this->_Date = $Date;
-        $this->_Id_snake = $Id_weight;
+        $this->_Id_serpent = $Id_serpent;
     }
 
     /*****************************ACCESSEURS*************************/
@@ -29,16 +29,13 @@ class Weight
         return $this->_Weight;
     }
 
-
-
-    public function get_Id_snake()
-    {
-        return $this->_Id_snake;
-    }
-
-
     public function get_Date()
     {
         return $this->_Date;
+    }
+
+    public function get_Id_serpent()
+    {
+        return $this->_Id_serpent;
     }
 }
