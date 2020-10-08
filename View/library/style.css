@@ -1,0 +1,434 @@
+img {
+    height: 70px;
+    vertical-align: sub;
+}
+
+h1 {
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px;
+    margin: auto;
+    background-color: #adaaa9;
+    font-size: 70px;
+}
+
+@font-face {
+    font-family: "GoodMorning";
+    src: url('../library/Font/GoodMorning.ttf');
+}
+
+@font-face {
+    font-family: "mangat";
+    src: url('../library/Font/mangat.ttf');
+}
+
+@font-face {
+    font-family: "Gostab";
+    src: url('../library/Font/Gostab.ttf');
+}
+
+#welcome {
+    background-color: #11ffee00;
+    border: 0px;
+    font-family: "GoodMorning", serif;
+    margin-top: 350px;
+    color: #FF4500;
+}
+
+header {
+    margin-top: 30px;
+}
+
+body {
+    background-color: #c7c1c0;
+}
+
+#wallpaper {
+    position: fixed;
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+
+.type, .type2, .type3 {
+    border: 2px solid black;
+    background-color: #adaaa9;
+    font-size: 50px;
+    margin-top: 100px;
+    padding: 5px;
+    text-align: left;
+    margin-right: 1510px;
+}
+
+.type2 {
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-bottom: 30px;
+}
+
+.type3 {
+    margin-bottom: 50px;
+}
+
+.border {
+    background-color: #adaaa9;
+    border: 1px solid black;
+    margin-top: 150px;
+    padding-bottom: 40px;
+}
+
+.box, .box2, .box4, .bo, .box6 {
+    display: inline-flex;
+    height: 60px;
+    margin-right: 180px;
+    margin-left: -50px;
+}
+
+.box2 {
+    height: 80px;
+}
+
+.box3 {
+    margin-top: 50px;
+}
+
+.box4 {
+    margin-top: -52px;
+    margin-left: 340px;
+    display: block;
+}
+
+.box5 {
+    display: inline-flex;
+    margin-top: 50px;
+    margin-left: 180px;
+}
+
+.box6 {
+    height: 70px;
+    margin-right: 80px;
+}
+
+.bo {
+    margin-right: 150px;
+}
+
+#background {
+    background-color: black;
+    background-image: url("../img/serpent.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    /* On met en place le fond d'écran */
+    min-height: 100%;
+    min-width: 1024px;
+    /* On indique un redimensionnement proportionnel */
+    width: 100%;
+    height: auto;
+    /* L'image est positionnée en haut à gauche */
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+#container {
+    border: 2px solid black;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+label {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 60px;
+}
+
+.font, .font2 {
+    font-size: 40px;
+    width: 300px;
+    text-align: center;
+}
+
+#date, #date2 {
+    font-size: 40px;
+    width: 400px;
+    text-align: center;
+}
+
+#size, #size2, #size4 {
+    font-size: 20px;
+    background-color: #adaaa9;
+    border: 2px solid black;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    text-align: center;
+    /* font-family: 'Apple Chancery', cursive; */
+    font-family: "mangat";
+}
+
+#size3 {
+    margin-left: 50px;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    padding-bottom: 12px;
+    background-color: floralwhite;
+}
+
+#size4 {
+    width: 300px;
+    background-color: #e77707;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+#masse {
+    font-size: 40px;
+    width: 300px;
+    text-align: center;
+}
+
+.Gr {
+    display: inline-flex;
+    margin-left: -150px;
+    margin-right: 80px;
+    font-size: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 25px;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    width: 1000px;
+}
+
+tr {
+    font-size: 25px;
+}
+
+.array {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.graphSize {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/************************* responsive mobile ****************************************/
+
+@media screen and (max-width: 420px) {
+    h1 {
+        text-align: center;
+        border: 2px solid black;
+        padding: 5px;
+        margin: auto;
+        background-color: #adaaa9;
+        font-size: 50px;
+    }
+    #welcome {
+        font-size: 30px;
+        margin-top: 270px;
+    }
+    #background {
+        background-color: black;
+        background-image: url("../img/serpent.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+        /* On met en place le fond d'écran */
+        min-height: 100%;
+        min-width: 414px;
+        /* On indique un redimensionnement proportionnel */
+        width: 100%;
+        height: 511px;
+        /* L'image est positionnée en haut à gauche */
+        position: fixed;
+        left: 0px;
+        top: 0px;
+    }
+    img {
+        height: 50px;
+        vertical-align: sub;
+    }
+    .type, .type2, .type3 {
+        border: 2px solid black;
+        background-color: #adaaa9;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 50px;
+        margin-right: 0px;
+    }
+    .type2 {
+        margin: 5px;
+    }
+    .titre {
+        font-size: 40px;
+    }
+    .array {
+        font-size: 15px;
+    }
+    .box, .box2 {
+        display: block;
+        height: 50px;
+        margin-right: 0px;
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+    .box4 {
+        margin-left: 170px;
+    }
+    .box5 {
+        display: inline-flex;
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    .box6 {
+        height: 70px;
+        margin-right: 10px;
+    }
+    .bo {
+        display: block;
+        height: 60px;
+        margin-right: 150px;
+        margin-left: -50px;
+    }
+    label {
+        font-size: 30px;
+        padding-top: 0px;
+        padding-right: 0px;
+    }
+    .firstname {
+        font-size: 30px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    #date, #date2 {
+        font-size: 25px;
+        width: 300px;
+        text-align: center;
+        height: 48px;
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+    tr {
+        font-size: 15px;
+    }
+    .font, .font2 {
+        font-size: 25px;
+        width: 300px;
+        text-align: center;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 65px;
+    }
+    .font2 {
+        margin-left: 0px;
+    }
+    #size, #size2 {
+        font-size: 20px;
+        background-color: #adaaa9;
+        border: 2px solid black;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-align: center;
+        margin-left: 50%;
+        margin-top: 30px;
+    }
+    #size2 {
+        margin-left: 150px;
+    }
+    #size3 {
+        margin-left: 0px;
+        background-color: floralwhite;
+        margin-top: 55px;
+    }
+    #size4 {
+        width: 80px;
+        font-size: 7px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #masse {
+        font-size: 40px;
+        width: 250px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+    .kg {
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 40px;
+        margin-top: -10px;
+        text-align: right;
+        width: 260px;
+    }
+    #size2 {
+        margin-left: 150px;
+    }
+    .tittle2 {
+        font-size: 30px;
+    }
+    .imgSize2 {
+        height: 30px;
+    }
+    .tittle {
+        font-size: 20px;
+    }
+    .imgSize {
+        height: 20px;
+    }
+    .border {
+        margin-top: 50px;
+        padding-bottom: 0px;
+    }
+    .Gr {
+        display: block;
+        margin-left: 275px;
+    }
+    #supp {
+        background-color: red;
+        border-block-color: red;
+        border-inline-color: red;
+        font-family: fantasy;
+    }
+}
+
+/************************* responsive mobile horizontal ****************************************/
+
+@media screen and (min-width: 736px) {
+    .tittle {
+        font-size: 40px;
+    }
+    .imgSize {
+        height: 40px;
+    }
+    .type2 {
+        margin: 5px;
+    }
+    .border {
+        margin-top: 50px;
+        padding: 0px;
+    }
+    .box2 {
+        margin-top: 50px;
+    }
+}
